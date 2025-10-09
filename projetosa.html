@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A História das Músicas Brasileiras</title>
+  <meta name="description" content="Breve histórico da evolução da música brasileira: origens, samba, bossa nova, MPB e som contemporâneo.">
+  <!-- Import da fonte Poppins (necessário para usar no font-family) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1: #6a11cb;
+      --bg2: #2575fc;
+      --card-bg: #ffffff;
+      --muted: #555;
+      --accent: #6a11cb;
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family:"Poppins", Arial, sans-serif;
+      background: linear-gradient(135deg,var(--bg1), var(--bg2));
+      color:#222;
+      margin:0;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    header{
+      padding:40px 20px;
+      text-align:center;
+      color:#fff;
+      /* overlay mais escuro para melhorar contraste do texto */
+      background: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.10));
+      text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+    }
+    header h1{font-size:2.2rem;margin:0 0 8px}
+    header p{margin:0;font-size:1rem;opacity:0.95}
+    nav{margin-top:14px}
+    nav a{
+      color:rgba(255,255,255,0.95);
+      text-decoration:none;
+      margin:0 8px;
+      font-weight:600;
+      font-size:0.95rem;
+    }
+    nav a:hover{opacity:0.9;text-decoration:underline}
+
+    main{padding:32px 16px}
+    .card{
+      max-width:900px;
+      margin:24px auto;
+      background:var(--card-bg);
+      padding:28px;
+      border-radius:12px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    h2{
+      color:var(--accent);
+      border-left:5px solid #2575fc;
+      padding-left:10px;
+      margin-top:0;
+    }
+
+    img.responsive{width:100%;height:auto;border-radius:12px;margin:18px 0;display:block}
+    .fonte{font-size:0.95rem;color:var(--muted);margin-top:14px}
+    ul{padding-left:20px;margin:10px 0}
+    li{margin-bottom:8px}
+    footer{background:rgba(0,0,0,0.75);color:#fff;text-align:center;padding:20px;margin-top:32px}
+
+    @media (max-width:520px){
+      header h1{font-size:1.6rem}
+      .card{padding:18px;margin:18px}
+      nav a{display:inline-block;margin:6px 6px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>A História das Músicas Brasileiras</h1>
+  <p>Das raízes populares ao som moderno — a evolução da música no Brasil</p>
+
+  <!-- Navegação interna (âncoras) -->
+  <nav aria-label="Navegação principal">
+    <a href="#origens">Origens</a> |
+    <a href="#samba">Samba</a> |
+    <a href="#bossa">Bossa Nova</a> |
+    <a href="#mpb">MPB</a> |
+    <a href="#contemporaneo">Contemporâneo</a>
+  </nav>
+</header>
+
+<main>
+  <section id="imagem" class="card" aria-labelledby="titulo-imagem">
+    <h2 id="titulo-imagem">Instrumentos e Ritmos</h2>
+    <img
+      class="responsive"
+      src="https://tse4.mm.bing.net/th/id/OIP.4sAoL0X7T8jP4P6HrSShVgHaE8?rs=1&pid=ImgDetMain"
+      alt="Vários instrumentos musicais brasileiros: violão, pandeiro e outros instrumentos de percussão"
+    >
+    <p class="fonte">Legenda: instrumentos que influenciaram os ritmos populares brasileiros.</p>
+  </section>
+
+  <section id="origens" class="card">
+    <h2>Origens e Influências</h2>
+    <p>A música brasileira tem suas origens na mistura de culturas indígenas, africanas e europeias. Essa fusão criou ritmos únicos, como o samba, o choro e o maracatu, que expressam a alma e a diversidade do povo brasileiro.</p>
+  </section>
+
+  <section id="samba" class="card">
+    <h2>A Era de Ouro do Samba</h2>
+    <p>Durante as décadas de 1930 e 1940, o samba consolidou-se como símbolo nacional. Artistas como Cartola, Noel Rosa e Dona Ivone Lara deram voz à cultura popular, transformando a música em poesia urbana.</p>
+  </section>
+
+  <section id="bossa" class="card">
+    <h2>Bossa Nova e o Som da Modernidade</h2>
+    <p>Nos anos 1950, surgiu a Bossa Nova, com melodias suaves e letras poéticas. João Gilberto, Tom Jobim e Vinicius de Moraes levaram o Brasil aos palcos do mundo, eternizando canções como “Garota de Ipanema”.</p>
+  </section>
+
+  <section id="mpb" class="card">
+    <h2>A Música Popular Brasileira (MPB)</h2>
+    <ul>
+      <li><strong>Década de 1960:</strong> A MPB uniu o regional e o moderno, misturando protesto e poesia.</li>
+      <li><strong>Artistas marcantes:</strong> Chico Buarque, Elis Regina, Caetano Veloso, Gilberto Gil e Maria Bethânia.</li>
+      <li><strong>Legado:</strong> Músicas que ainda hoje inspiram novas gerações de compositores.</li>
+    </ul>
+  </section>
+
+  <section id="contemporaneo" class="card">
+    <h2>O Som Contemporâneo</h2>
+    <p>No século XXI, novos estilos como o funk, o sertanejo universitário e o pop brasileiro dominam as paradas. A internet democratizou a produção musical, permitindo que artistas independentes alcançassem grandes públicos.</p>
+  </section>
+
+  <section class="card fonte" aria-labelledby="fontes">
+    <h2 id="fontes">Fontes</h2>
+    <ul>
+      <li>Enciclopédia da Música Brasileira</li>
+      <li>Museu da Imagem e do Som</li>
+      <li><a href="https://rollingstone.uol.com.br" target="_blank" rel="noopener noreferrer">Revista Rolling Stone Brasil</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Projeto escolar — História da Música Brasileira</p>
+  <p>Desenvolvido por Sara Duarte</p>
+</footer>
+
+</body>
+</html>
